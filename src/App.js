@@ -76,7 +76,7 @@ FnUpdateInfo= (e)=>{
           <div className="main">
            <img className="puce" src={puce} alt="puce"/>
            <div className="info">
-           <h2 className="numCart">{this.state.CardNumber.padEnd(16,"*").split("").map((x,i)=> (i===0 || i%4===0)? ' '+x:x )}</h2>
+           <span id="numCart">{this.state.CardNumber.padEnd(16,"*").split("").map((x,i)=> (i===0 || i%4===0)? ' '+x:x )}</span>
             
             <div className="codeVal">
             <h3 id="code">{this.state.CardCode.padEnd(4,"*").split("").map((x,i)=> (i===0 || i%4===0)? " "+x:x )}</h3>
